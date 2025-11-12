@@ -31,7 +31,7 @@ export default function RegisterPage() {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+            className="w-full p-3 border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-purple-500"
             required
           />
           <input
@@ -39,7 +39,7 @@ export default function RegisterPage() {
             placeholder="Password (6+ chars)"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+            className="w-full p-3 border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-purple-500"
             required
           />
           {error && <p className="text-red-500 text-sm">{error}</p>}
@@ -57,6 +57,5 @@ export default function RegisterPage() {
           </a>
         </p>
       </div>
-    </div>
-  );
+</div>);
 }

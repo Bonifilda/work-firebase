@@ -32,7 +32,7 @@ export default function LoginPage() {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-3 border border-black rounded-lg focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-3 border text-black border-black rounded-lg focus:ring-2 focus:ring-indigo-500"
             required
           />
           <input
@@ -40,7 +40,7 @@ export default function LoginPage() {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full p-3 border border-black rounded-lg focus:ring-2 focus:ring1 focus:ring-indigo-500"
+            className="w-full p-3 border border-black rounded-lg  text-black focus:ring-2 focus:ring1 focus:ring-indigo-500"
             required
           />
           {error && <p className="text-red-500 text-sm">{error}</p>}
@@ -57,6 +57,6 @@ export default function LoginPage() {
           </a>
         </p>
       </div>
-    </div>
-  );
+</div>
+);
 }

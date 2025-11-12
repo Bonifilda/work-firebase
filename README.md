@@ -10,8 +10,8 @@ Only logged-in users can create, read, update, and delete their owntasks.
 - Tailwind CSS (styling)
 Features
 
-| Feature | Description |
----------------------|
+| Feature | Description 
+
 Firebase Authentication: Register & login with email/password. Logout button available. |
 Protected Routes:(dashboard) and `/tasks/[id]` only accessible when logged in. Unauthorized users are redirected to `/login`. |
 CRUD Operations Add, edit, toggle complete, delete tasks – all synced in real time. |
@@ -22,3 +22,6 @@ Personalized Dashboard Greeting :`Hello, testuser@gmail.com` (or current user’
    
    git clone https://github.com/Bonifilda/work-firebase.git
    cd work-firebase
+ here there is screenshoot of login ![alt text](image.png)
+ Here there is the screenshoot of register ![alt text](image-1.png)
+ screenshoot of Dasboard ![alt text](image-2.png)

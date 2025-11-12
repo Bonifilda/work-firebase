@@ -96,7 +96,7 @@ export default function Dashboard() {
   if (!user) return null;
 
   return (
-    <div className="min-h-screen bg-blue-50 to-indigo-100 p-6">
+    <div className="min-h-screen bg-blue-50 to-indigo-100 p-6 text-black">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-8 bg-white p-4 rounded-lg shadow">
@@ -135,7 +135,7 @@ export default function Dashboard() {
                   key={t.id}
                   task={t}
                   onEdit={setEditTask}
-                  onDelete = {handleDelete}
+                  onDelete={handleDelete}
                   onToggle={toggleComplete}
                 />
               ))}
@@ -143,8 +143,8 @@ export default function Dashboard() {
           )}
         </div>
       </div>
-    </div>
-  );
+</div>
+);
 }
 
 
