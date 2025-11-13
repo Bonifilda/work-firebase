@@ -4,17 +4,17 @@ import { NextResponse } from "next/server";
 
 export async function PUT(
   req: Request,
-  context: { params: { id: string } }
+  context: { params: any }
 ) {
   try {
-    const { id } = context.params; // no await
+    const { id } =context.params; // no await
     if (!id) {
       return NextResponse.json({ error: "ID is required" }, { status: 400 });
     }
 
     const body = await req.json();
 
-    const taskRef = doc(db, "tasks", id);
+    const taskRef = doc(db, "taskform", id);
     await updateDoc(taskRef, {
       ...body,
       updatedAt: new Date(),
@@ -30,7 +30,7 @@ export async function PUT(
 
 export async function DELETE(
   req: Request,
-  context: { params: { id: string } }
+  context: { params: any }
 ) {
   try {
     const { id } = context.params; // no await
@@ -38,7 +38,7 @@ export async function DELETE(
       return NextResponse.json({ error: "Task ID is required" }, { status: 400 });
     }
 
-    const taskRef = doc(db, "tasks", id); // should match collection name
+    const taskRef = doc(db, "taskform", id); // should match collection name
     await deleteDoc(taskRef);
 
     return NextResponse.json({ message: "Task deleted" });
